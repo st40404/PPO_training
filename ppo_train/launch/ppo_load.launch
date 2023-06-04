@@ -1,0 +1,21 @@
+
+<launch>
+    <!-- open gazebo -->
+
+    <arg
+    name="path_to_ppo"
+    default="$(find ppo_train)/result"
+    />
+
+
+    <node pkg="ppo_train" 
+        type="ppo_load.py" 
+        name="ppo_load" 
+        output="screen"
+        clear_params="true">>
+
+        <param name="path_to_ppo" value="$(arg path_to_ppo)" /> 
+    </node>
+
+
+</launch>
