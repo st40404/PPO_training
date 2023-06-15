@@ -57,9 +57,8 @@ message_generation
 ## Generate services in the 'srv' folder
 add_service_files(
   FILES
-#   Service1.srv
   PPOPose.srv
-  PPOPose_.srv
+  PPOPose_2.srv
 )
 
 ## Generate actions in the 'action' folder
