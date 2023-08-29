@@ -33,6 +33,7 @@ if __name__ == '__main__':
     path = rospy.get_param('/ppo_load_2/path_to_ppo_')
     # filename = "/ppo_localization_5m_m2"
     # filename = "/m3_20m_0.00003"
-    filename = "/m3_50m_0.003(r3_1)"
+    # filename = "/m3_50m_0.003(r3_1)"
+    filename = "/m3_50m_2048_0.0003(r4_1)"
 
     startPPO = LoadPPO(path+filename)
